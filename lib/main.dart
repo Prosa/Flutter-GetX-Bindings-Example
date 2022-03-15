@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:test_get_app/auth_middleware.dart';
 import 'package:test_get_app/initial_bindings.dart';
 import 'package:test_get_app/welcome_page.dart';
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(
             page: () => const WelcomePage(), name: '/',
+          middlewares: [AuthMiddleware()]
         ),
       ],
       //you can use initialRoute instead of home
