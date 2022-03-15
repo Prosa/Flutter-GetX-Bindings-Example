@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:test_get_app/user_controller.dart';
 
 class AuthMiddleware extends GetMiddleware {
-  final authService = UserController.find; // Here is error, this line can't find UserController
+  final authService = UserController.findOrInitialize; // Here is error, this line can't find UserController
   @override
   int? get priority => 1;
   bool isAuthenticated = false;

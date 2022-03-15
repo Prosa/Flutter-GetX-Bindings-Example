@@ -2,8 +2,8 @@
 import 'package:get/get.dart';
 
 class UserController extends GetxController{
-  //I set the default value as false;
-  static UserController get find {
+
+  static UserController get findOrInitialize {
     try{
       return Get.find<UserController>();
     }catch(e){

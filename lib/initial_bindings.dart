@@ -5,7 +5,7 @@ import 'package:test_get_app/user_controller.dart';
 class InitialBindings extends Bindings{
   @override
   void dependencies() {
-    UserController.find;
+    UserController.findOrInitialize;
   }
 
 }
